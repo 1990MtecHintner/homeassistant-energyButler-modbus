@@ -418,7 +418,9 @@ SELECT_TYPES = [
             0x104: "PeakShift",
             0x105: "Feed-In",
             0x200: "Off-Grid",
-            #0x301, 0x302, 0x303 : EMS Modes
+            0x301: "EMS Mode1",
+            0x302: "EMS Mode2",
+            0x303: "EMS Mode3",
             0x400: "ToU",
         },
         entity_category=EntityCategory.CONFIG,
@@ -1539,3 +1541,4 @@ plugin_instance = solinteg_plugin(
     order32="big",
     # auto_block_ignore_readerror = True
 )
+
